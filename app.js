@@ -57,7 +57,6 @@ function checkScore() {
         }
     })
 
-    console.log(circleWins);
     if (circleWins) {
         infoDisplay.textContent = `Circle is the winner`;
         return;
