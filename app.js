@@ -52,7 +52,7 @@ function checkScore() {
     winningCombos.forEach(combo => {
         if (combo.every(cell => allSquares[cell].firstChild?.classList.contains('cross'))) {
             crossWins = true;
-            gameOver = false;
+            gameOver = true;
             return;
         }
     })
